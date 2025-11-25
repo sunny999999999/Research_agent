@@ -16,8 +16,8 @@ import streamlit as st
 load_dotenv()
 api_key = st.secrets["GEMINI_API_KEY"]
 
-google_sheet_id = os.getenv("GOOGLE_SHEET_ID")
-Firecrawl_api_key = os.getenv("FIRECRAWL_API_KEY")
+# google_sheet_id = os.getenv("GOOGLE_SHEET_ID")
+# Firecrawl_api_key = os.getenv("FIRECRAWL_API_KEY")
 google_sheet_id = st.secrets("GOOGLE_SHEET_ID")
 Firecrawl_api_key = st.secrets("FIRECRAWL_API_KEY")
 
@@ -73,4 +73,5 @@ async def Research_agent_run(Task:str):
         print("No final message produced.")
 
 # if __name__ == "__main__":
+
 #     asyncio.run(main())
