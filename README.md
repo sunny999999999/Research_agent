@@ -1,21 +1,14 @@
 ## This project is an AI-powered autonomous research agent that generates detailed research reports using:
 
 ### Google Sheets (via API)
-
 ### Firecrawl Web Search + Extraction
-
 ### OpenAI / Gemini LLMs
-
 ### Autogen Framework
-
 ### Streamlit Frontend
 
 The agent performs web search, content extraction, reasoning, and structured report generation automatically.
 A Streamlit UI allows users to input:
-
-### Prospect Name
-
-### Company Name
+### Prospect Name - ### Company Name
 
 ## The agent then produces a personalized research report saved as report.txt.
 ```
@@ -28,3 +21,4 @@ A Streamlit UI allows users to input:
 -pass the fire crawl api key in .env
 -streamlit run app.py
 ```
+
