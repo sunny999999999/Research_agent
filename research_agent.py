@@ -18,8 +18,8 @@ api_key = st.secrets["GEMINI_API_KEY"]
 
 # google_sheet_id = os.getenv("GOOGLE_SHEET_ID")
 # Firecrawl_api_key = os.getenv("FIRECRAWL_API_KEY")
-google_sheet_id = st.secrets("GOOGLE_SHEET_ID")
-Firecrawl_api_key = st.secrets("FIRECRAWL_API_KEY")
+google_sheet_id = st.secrets["GOOGLE_SHEET_ID"]
+Firecrawl_api_key = st.secrets["FIRECRAWL_API_KEY"]
 
 model_client = OpenAIChatCompletionClient(model="gemini-2.5-flash",api_key=api_key,
                                           parallel_tool_calls=False)
@@ -75,3 +75,4 @@ async def Research_agent_run(Task:str):
 # if __name__ == "__main__":
 
 #     asyncio.run(main())
+
