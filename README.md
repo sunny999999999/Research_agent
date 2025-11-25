@@ -1,16 +1,30 @@
+## This project is an AI-powered autonomous research agent that generates detailed research reports using:
 
-pip install uv
+### Google Sheets (via API)
 
-uv venv
+### Firecrawl Web Search + Extraction
 
-uv pip install -r requirements.txt
+### OpenAI / Gemini LLMs
 
-pass the google sheet id in .env
+### Autogen Framework
 
-pass gemini api key in .env
+### Streamlit Frontend
 
-pass the fire crawl api key in .env
+The agent performs web search, content extraction, reasoning, and structured report generation automatically.
+A Streamlit UI allows users to input:
 
-streamlit run app.py
+### Prospect Name
 
-go to the url.
+### Company Name
+
+## The agent then produces a personalized research report saved as report.txt.
+```
+- pip install uv
+- uv init
+- uv venv
+- uv pip install -r requirements.txt
+- pass the google sheet id in .env (if required)
+- pass gemini api key in .env
+-pass the fire crawl api key in .env
+-streamlit run app.py
+```
